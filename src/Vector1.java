@@ -170,7 +170,6 @@ public class Vector1 extends javax.swing.JFrame {
 
     private void cmdLlenarManuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLlenarManuActionPerformed
     double n;
-    double acum=0, prod=1, menor=0, mayor=0;
     for (int i = 0; i < v.length; i++) {
     n= Double.parseDouble(JOptionPane.showInputDialog(this, "Digite el elemento en la posicion"+i));
     v[i]=n;
