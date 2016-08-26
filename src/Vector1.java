@@ -178,6 +178,10 @@ public class Vector1 extends javax.swing.JFrame {
 
     private void cmdMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdMostrarActionPerformed
     double acum=0, prod=1, menor=0, mayor=0;
+     if(txtLongitud.getText().trim().equals("")){
+    JOptionPane.showMessageDialog(this, "Por favor llene el campo longitud");
+    txtLongitud.requestFocusInWindow();
+    }
     for (int i = 0; i < v.length; i++) {
     txtResultado.append(v[i]+"\n");      
     }
@@ -215,6 +219,7 @@ public class Vector1 extends javax.swing.JFrame {
     double n;
     for (int i = 0; i < v.length; i++) {
     v[i]= (int) (Math.random()*100 + 1);
+    
     }
     JOptionPane.showMessageDialog(this, "Vector LLenado Correctamente");
     }//GEN-LAST:event_cmdLlenarAutoActionPerformed
